@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Kanit:wght@500&family=Montserrat&family=Roboto&family=Secular+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color: #550961; */
+            background-color: darkslategray;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Secular One', sans-serif;
+        }
+
+        .start{
+            margin-bottom: 200px;
+            width: 100%;
+        }
+
+        .start > img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            border: black 5px solid;
+            margin-left: 42%;
+            position: absolute;
+        }
+
+        .line{
+            width: 100%;
+            border-bottom: 20px solid black;
+            padding-bottom: 90px;
+        }
+
+        .name{
+            font-size:50px;
+            display: block;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        
+
+        .flexBox{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 50px;
+        }
+
+        .flexBox > div{
+            width: 400px;
+            height: 500px;
+            background-color: #550961;
+            border: 5px solid black;
+            margin: 20px;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #icon{
+            margin-left: 10%;
+            margin-top: 10%;
+            width: 310px;
+            height: 410;
+            position: absolute;
+        }
+
+        #calculator{
+            width: auto;
+            height: 500px;
+            position: absolute;
+            left: -60%;
+        }
+
+        #quizPic{
+            width: auto;
+            height: 500px;
+            position: absolute;
+            left: -60%;
+        }
+
+        .megamanAni{
+            width: auto;
+            height: 500px;
+            position: absolute;
+            
+        }
+
+        .title{
+            text-align: center;
+            width: 40%;
+            height: auto;
+            font-size: 50px;
+            border: black 5px solid;
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+
+        #a{
+            width: auto;
+            height: 500px;
+            position: absolute;
+        }
+
+        .inside{
+            background-color: white;
+            width: 330px;
+            height: 450px;
+            margin-top: 20.5px;
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+            position: absolute;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 18px black;
+            border-radius: 20px;
+            display: none;
+        }
+
+        .inside > p{
+            margin-top: 100px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Secular One', sans-serif;
+        }
+
+        .inside > button{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        @media only screen and (max-width: 600px){
+            .flexBox{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .myWork{
+            width: 950px;
+        }
+
+        .start{
+            margin-bottom: 200px;
+            width: 950px;
+        }
+
+        .start > img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            border: black 5px solid;
+            margin-left: 60%;
+            position: absolute;
+        }
+        }
+
+        @media only screen and (max-width: 400px){
+            .flexBox{
+            display: grid;
+            grid-template-columns: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .myWork{
+            width: 550px;
+        }
+
+        .start{
+            margin-bottom: 200px;
+            width: 550px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="start">
+        <p class="name">Aaron Romero</p>
+        <img src="img/Aaron-bow (1).png" alt="">
+        <div class="line"></div>
+    </div>
+    <div class="myWork">
+
+        <div class="title">My Work</div>
+
+        <div class="flexBox">
+            <div class="flex1">
+                <img id="icon" src="img/resumeIcon.png" alt="">
+
+                <div class="inside" id="1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex2">
+                <img id="calculator" src="img/calculatorPic.jpeg" alt="">
+
+                <div class="inside" id="2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="flex3">
+                <img id="quizPic" src="img/quizPic.jpeg" alt="">
+
+                <div class="inside" id="3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex4">
+                <img id="quizPic" src="img/sans.jpeg" alt="">
+
+                <div class="inside" id="4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex5">
+                <img class="megamanAni" src="img/megamanAni.png" alt="">
+
+                <div class="inside" id="5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex6">
+                <img id="quizPic" src="img/BCSPhoto.jpeg" alt="">
+
+                <div class="inside" id="6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex7">
+                <img id="quizPic" src="img/amoungUSweb.png" alt="">
+
+                <div class="inside" id="7">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex8">
+                <img id="a" src="img/BCSfromPic.jpeg" alt="">
+
+                <div class="inside" id="8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+            </div>
+            <div class="flex9">
+
+                <div class="inside" id="9">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisdeda daawdawd wadadaw rwgh vdw</p>
+                    <button>Live Demo</button>
+                </div>
+                <img src="img/JQ.png" alt="">
+
+                
+            </div>
+        </div>
+    </div>
+    <script>
+
+$(document).ready(function() {
+$('.flex1').hover(
+   function () {
+      $(" #1 ").fadeIn();
+   },
+   function () {
+      $("#1").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex2').hover(
+   function () {
+      $(" #2 ").fadeIn();
+   },
+   function () {
+      $("#2").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex3').hover(
+   function () {
+      $(" #3 ").fadeIn();
+   },
+   function () {
+      $("#3").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex4').hover(
+   function () {
+      $(" #4 ").fadeIn();
+   },
+   function () {
+      $("#4").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex5').hover(
+   function () {
+      $(" #5 ").fadeIn();
+   },
+   function () {
+      $("#5").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex6').hover(
+   function () {
+      $(" #6 ").fadeIn();
+   },
+   function () {
+      $("#6").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex7').hover(
+   function () {
+      $(" #7 ").fadeIn();
+   },
+   function () {
+      $("#7").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex8').hover(
+   function () {
+      $(" #8 ").fadeIn();
+   },
+   function () {
+      $("#8").fadeOut();
+   }
+);
+});
+
+$(document).ready(function() {
+$('.flex9').hover(
+   function () {
+      $(" #9 ").fadeIn();
+   },
+   function () {
+      $("#9").fadeOut();
+   }
+);
+});
+    </script>
+</body>
+
+</html>
